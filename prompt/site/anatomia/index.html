@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Anatomia - Mi Documentación</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Anatomia";
+    var mkdocs_page_input_path = "anatomia.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Mi Documentación</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="tocbase current">
+    
+    
+      
+
+
+  <li class="navtree toctree-l1 inactive">
+    <a class="" href="../introduccion/">Introducción</a>
+  </li>
+    
+      
+
+
+  <li class="navtree toctree-l1 inactive">
+    <a class="" href="../guia_usuario.md">Guía de Usuario</a>
+  </li>
+    
+      
+
+
+  <li class="navtree toctree-l1 inactive">
+    <a class="" href="../referencia.md">Referencia</a>
+  </li>
+    
+  </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Mi Documentación</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Anatomia</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h3 id="2-anatomia-del-prompt">2. Anatomía del Prompt</h3>
+<p>El <strong>prompt</strong> en Linux proporciona una interfaz visual para que los usuarios ingresen comandos. A continuación, desglosamos los componentes típicos del prompt por defecto:</p>
+<h4 id="1-usuario">1. <strong>Usuario</strong></h4>
+<p>El primer componente del prompt muestra el <strong>nombre de usuario</strong> que está actualmente conectado al sistema. Esto ayuda a identificar qué usuario está realizando las operaciones en la terminal.</p>
+<ul>
+<li><strong>Formato típico:</strong> <code>usuario@hostname</code></li>
+<li><strong>Ejemplo:</strong> <code>walter@mi_computadora</code></li>
+<li><code>walter</code> es el nombre del usuario.</li>
+<li><code>mi_computadora</code> es el nombre del sistema o hostname.</li>
+</ul>
+<p>Este formato te permite ver claramente qué usuario está conectado y en qué máquina, lo cual es especialmente útil cuando trabajas en entornos multiusuario o en servidores remotos.</p>
+<h4 id="2-directorio-actual">2. <strong>Directorio Actual</strong></h4>
+<p>El siguiente componente del prompt muestra el <strong>directorio actual</strong> en el que te encuentras. Este componente te indica tu ubicación dentro del sistema de archivos.</p>
+<ul>
+<li><strong>Formato típico:</strong> <code>directorio_actual</code></li>
+<li><strong>Ejemplo:</strong> <code>~/Documentos</code></li>
+<li><code>~</code> representa el directorio home del usuario actual.</li>
+<li><code>Documentos</code> es una subcarpeta dentro del directorio home.</li>
+</ul>
+<p>Si estás en el directorio home del usuario, el prompt puede mostrar <code>~</code> como un atajo para representar esa ubicación. Si te encuentras en otro directorio, el prompt mostrará la ruta completa o relativa desde el directorio home.</p>
+<h4 id="3-simbolo-del-prompt">3. <strong>Símbolo del Prompt</strong></h4>
+<p>Finalmente, el prompt suele terminar con un <strong>símbolo</strong> que indica que el sistema está listo para recibir comandos.</p>
+<ul>
+<li><strong>Símbolo típico para usuarios normales:</strong> <code>$</code></li>
+<li>
+<p><strong>Símbolo para el usuario root:</strong> <code>#</code></p>
+</li>
+<li>
+<p><strong>Ejemplo completo de un prompt:</strong> <code>walter@mi_computadora:~/Documentos$</code></p>
+</li>
+<li>Aquí, <code>walter@mi_computadora</code> muestra el usuario y el hostname.</li>
+<li><code>~/Documentos</code> muestra el directorio actual.</li>
+<li><code>$</code> indica que el usuario es un usuario normal.</li>
+</ul>
+<p>Cada uno de estos componentes ayuda a proporcionar contexto y orientación al usuario, permitiendo una navegación y gestión más eficientes del sistema desde la línea de comandos.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

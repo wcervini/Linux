@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Comandos - Mi Documentación</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Comandos";
+    var mkdocs_page_input_path = "comandos.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Mi Documentación</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="tocbase current">
+    
+    
+      
+
+
+  <li class="navtree toctree-l1 inactive">
+    <a class="" href="../introduccion/">Introducción</a>
+  </li>
+    
+      
+
+
+  <li class="navtree toctree-l1 inactive">
+    <a class="" href="../guia_usuario.md">Guía de Usuario</a>
+  </li>
+    
+      
+
+
+  <li class="navtree toctree-l1 inactive">
+    <a class="" href="../referencia.md">Referencia</a>
+  </li>
+    
+  </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Mi Documentación</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Comandos</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h3 id="comandos-utiles-para-el-prompt">Comandos Útiles para el Prompt</h3>
+<p>Estos comandos te ayudarán a trabajar con el prompt y gestionar tu entorno de terminal. A continuación se presentan comandos comunes para <strong>Bash</strong>, <strong>Zsh</strong>, y <strong>Fish</strong>.</p>
+<h4 id="1-ver-el-directorio-de-trabajo-actual"><strong>1. Ver el Directorio de Trabajo Actual</strong></h4>
+<ul>
+<li><strong><code>pwd</code></strong>: Muestra el directorio de trabajo actual.</li>
+<li><strong>Uso:</strong>
+    <code>bash
+    pwd</code></li>
+<li><strong>Ejemplo de Salida:</strong>
+    <code>bash
+    /home/walter/projects</code></li>
+</ul>
+<h4 id="2-cambiar-el-directorio-actual"><strong>2. Cambiar el Directorio Actual</strong></h4>
+<ul>
+<li><strong><code>cd</code></strong>: Cambia el directorio de trabajo actual.</li>
+<li><strong>Uso:</strong>
+    <code>bash
+    cd /ruta/del/directorio</code></li>
+<li><strong>Ejemplos:</strong><ul>
+<li><strong>Ir al directorio home del usuario:</strong>
+  <code>bash
+  cd ~</code></li>
+<li><strong>Subir un nivel en el árbol de directorios:</strong>
+  <code>bash
+  cd ..</code></li>
+</ul>
+</li>
+</ul>
+<h4 id="3-crear-alias-para-comandos-comunes"><strong>3. Crear Alias para Comandos Comunes</strong></h4>
+<p>Los alias permiten crear comandos personalizados para simplificar tareas comunes. Puedes definir alias en el archivo de configuración de tu shell.</p>
+<ul>
+<li><strong>Bash:</strong></li>
+<li><strong>Definir un alias temporal:</strong>
+    <code>bash
+    alias ll='ls -la'</code></li>
+<li>
+<p><strong>Definir un alias permanente:</strong>
+    Añade el alias a <code>~/.bashrc</code>:
+    <code>bash
+    alias ll='ls -la'</code>
+    Luego recarga el archivo:
+    <code>bash
+    source ~/.bashrc</code></p>
+</li>
+<li>
+<p><strong>Zsh:</strong></p>
+</li>
+<li><strong>Definir un alias temporal:</strong>
+    <code>zsh
+    alias ll='ls -la'</code></li>
+<li>
+<p><strong>Definir un alias permanente:</strong>
+    Añade el alias a <code>~/.zshrc</code>:
+    <code>zsh
+    alias ll='ls -la'</code>
+    Luego recarga el archivo:
+    <code>zsh
+    source ~/.zshrc</code></p>
+</li>
+<li>
+<p><strong>Fish:</strong></p>
+</li>
+<li><strong>Definir un alias temporal:</strong>
+    <code>fish
+    alias ll='ls -la'</code></li>
+<li><strong>Definir un alias permanente:</strong>
+    Usa el comando <code>funcsave</code> para guardar el alias en <code>~/.config/fish/functions</code>:
+    <code>fish
+    function ll
+        ls -la
+    end
+    funcsave ll</code></li>
+</ul>
+<h4 id="4-listar-alias-definidos"><strong>4. Listar Alias Definidos</strong></h4>
+<p>Para ver todos los alias definidos en tu sesión actual:</p>
+<ul>
+<li><strong>Bash y Zsh:</strong>
+  ```bash
+  alias</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

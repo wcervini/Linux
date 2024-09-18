@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Atajos - Mi Documentación</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Atajos";
+    var mkdocs_page_input_path = "atajos.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Mi Documentación</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="tocbase current">
+    
+    
+      
+
+
+  <li class="navtree toctree-l1 inactive">
+    <a class="" href="../introduccion/">Introducción</a>
+  </li>
+    
+      
+
+
+  <li class="navtree toctree-l1 inactive">
+    <a class="" href="../guia_usuario.md">Guía de Usuario</a>
+  </li>
+    
+      
+
+
+  <li class="navtree toctree-l1 inactive">
+    <a class="" href="../referencia.md">Referencia</a>
+  </li>
+    
+  </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Mi Documentación</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Atajos</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h3 id="atajos-de-teclado-utiles-en-la-terminal">Atajos de Teclado Útiles en la Terminal</h3>
+<p>Conocer y usar atajos de teclado en la terminal puede mejorar significativamente tu productividad al trabajar con la línea de comandos. A continuación, se presentan algunos atajos de teclado comunes para <strong>Bash</strong>, <strong>Zsh</strong>, y <strong>Fish</strong>.</p>
+<h4 id="atajos-de-teclado-generales"><strong>Atajos de Teclado Generales</strong></h4>
+<ul>
+<li><strong><code>Ctrl + C</code></strong>: Termina el comando en ejecución.</li>
+<li>
+<p>Utilizado para cancelar procesos en ejecución.</p>
+</li>
+<li>
+<p><strong><code>Ctrl + D</code></strong>: Cierra la terminal o finaliza la entrada estándar (EOF).</p>
+</li>
+<li>
+<p>En una sesión de shell, envía una señal de fin de archivo y puede cerrar la sesión si se usa en una línea de comando vacía.</p>
+</li>
+<li>
+<p><strong><code>Ctrl + Z</code></strong>: Suspende el comando en ejecución y lo pone en segundo plano.</p>
+</li>
+<li>
+<p>Puedes reanudar el proceso suspendido con el comando <code>fg</code> (foreground) o <code>bg</code> (background).</p>
+</li>
+<li>
+<p><strong><code>Ctrl + L</code></strong>: Limpia la pantalla del terminal.</p>
+</li>
+<li>
+<p>Equivalente al comando <code>clear</code>.</p>
+</li>
+<li>
+<p><strong><code>Ctrl + A</code></strong>: Mueve el cursor al principio de la línea.</p>
+</li>
+<li><strong><code>Ctrl + E</code></strong>: Mueve el cursor al final de la línea.</li>
+<li><strong><code>Ctrl + U</code></strong>: Borra el texto desde el cursor hasta el principio de la línea.</li>
+<li><strong><code>Ctrl + K</code></strong>: Borra el texto desde el cursor hasta el final de la línea.</li>
+<li><strong><code>Ctrl + W</code></strong>: Borra la palabra anterior al cursor.</li>
+<li><strong><code>Ctrl + Y</code></strong>: Pega el texto que se ha borrado con <code>Ctrl + U</code>, <code>Ctrl + K</code>, o <code>Ctrl + W</code>.</li>
+<li><strong><code>Ctrl + R</code></strong>: Inicia una búsqueda inversa en el historial de comandos.</li>
+<li>
+<p>Empieza a escribir el comando que buscas y usa <code>Ctrl + R</code> para buscar coincidencias.</p>
+</li>
+<li>
+<p><strong><code>Tab</code></strong>: Autocompleta nombres de archivos y comandos.</p>
+</li>
+<li>
+<p>Presiona <code>Tab</code> una vez para autocompletar el texto o dos veces para ver opciones de completado.</p>
+</li>
+<li>
+<p><strong><code>Up Arrow</code></strong>: Muestra el comando anterior en el historial.</p>
+</li>
+<li><strong><code>Down Arrow</code></strong>: Muestra el siguiente comando en el historial.</li>
+<li><strong><code>Left Arrow</code></strong>: Mueve el cursor un carácter a la izquierda.</li>
+<li><strong><code>Right Arrow</code></strong>: Mueve el cursor un carácter a la derecha.</li>
+</ul>
+<h4 id="atajos-especificos-para-shells"><strong>Atajos Específicos para Shells</strong></h4>
+<ul>
+<li><strong>Bash y Zsh:</strong></li>
+<li><strong><code>Ctrl + P</code></strong>: Muestra el comando anterior en el historial (equivalente a la tecla de flecha hacia arriba).</li>
+<li><strong><code>Ctrl + N</code></strong>: Muestra el siguiente comando en el historial (equivalente a la tecla de flecha hacia abajo).</li>
+<li>
+<p><strong><code>Ctrl + X, Ctrl + E</code></strong>: Abre el editor de texto configurado para editar el comando actual en una nueva ventana.</p>
+</li>
+<li>
+<p><strong>Fish:</strong></p>
+</li>
+<li><strong><code>Ctrl + R</code></strong>: Inicia una búsqueda inversa en el historial, similar a <strong>Bash</strong> y <strong>Zsh</strong>.</li>
+<li><strong><code>Ctrl + G</code></strong>: Sal de la búsqueda inversa en el historial y regresa al comando actual.</li>
+</ul>
+<h3 id="nota">Nota</h3>
+<p>Familiarizarte con estos atajos de teclado puede ayudarte a trabajar de manera más eficiente en la terminal, facilitando la edición de comandos, la navegación en el historial y la gestión de procesos. Explora y practica estos atajos para encontrar los que mejor se adapten a tu flujo de trabajo.</p>
+<h3 id="recursos-de-atajos-de-teclado-para-la-terminal">Recursos de Atajos de Teclado para la Terminal</h3>
+<p>A continuación se presentan algunos enlaces útiles que proporcionan información detallada sobre atajos de teclado para la terminal en diferentes sistemas y shells:</p>
+<ul>
+<li><a href="https://www.tecmint.com/linux-terminal-keyboard-shortcuts/"><strong>Atajos de teclado para la terminal en Linux</strong></a></li>
+<li>
+<p>Una guía completa sobre atajos de teclado para diversas tareas en la terminal de Linux, incluyendo <strong>Bash</strong> y otros shells.</p>
+</li>
+<li>
+<p><a href="https://www.gnu.org/software/bash/manual/html_node/Using-Readline.html"><strong>Atajos de teclado de la terminal de GNU Bash</strong></a></p>
+</li>
+<li>
+<p>Detalles sobre los atajos de teclado específicos para <strong>Bash</strong> utilizando la biblioteca Readline.</p>
+</li>
+<li>
+<p><a href="https://zsh.sourceforge.io/Doc/Release/Line-Editing.html#Line-Editing"><strong>Atajos de teclado para Zsh</strong></a></p>
+</li>
+<li>Información sobre la edición de línea y los atajos de teclado disponibles en <strong>Zsh</strong>.</li>
+</ul>
+<p>Estos recursos te ofrecerán una visión completa y detallada sobre cómo utilizar los atajos de teclado en la terminal para mejorar tu eficiencia y productividad.</p>
+<h3 id="atajos-de-teclado-ctrl-a-y-ctrl-e">Atajos de Teclado <code>Ctrl + A</code> y <code>Ctrl + E</code></h3>
+<p>Los atajos de teclado <code>Ctrl + A</code> y <code>Ctrl + E</code> son herramientas útiles para navegar y editar comandos en la línea de comandos. Estos atajos son comunes en <strong>Bash</strong>, <strong>Zsh</strong>, y <strong>Fish</strong>.</p>
+<h4 id="atajo-de-teclado-ctrl-a-mover-el-cursor-al-principio-de-la-linea"><strong>Atajo de Teclado <code>Ctrl + A</code>: Mover el Cursor al Principio de la Línea</strong></h4>
+<ul>
+<li>
+<p><strong>Función:</strong> Mueve el cursor al principio de la línea actual.</p>
+</li>
+<li>
+<p><strong>Cómo Usarlo:</strong></p>
+</li>
+<li>
+<p>Mientras estás editando un comando, presiona <code>Ctrl + A</code> para mover el cursor al inicio de la línea de comando.</p>
+</li>
+<li>
+<p><strong>Beneficios:</strong></p>
+</li>
+<li><strong>Navegación Rápida:</strong> Permite desplazarse rápidamente al inicio de la línea sin tener que usar las teclas de flecha repetidamente.</li>
+<li>
+<p><strong>Edición Eficiente:</strong> Facilita la modificación de los primeros caracteres de una línea de comando.</p>
+</li>
+<li>
+<p><strong>Ejemplo:</strong>
+  Supongamos que tienes el siguiente comando en la línea:
+  ```bash
+  ls -l /home/walter/Documents</p>
+</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

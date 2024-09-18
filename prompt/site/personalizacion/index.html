@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Personalizacion - Mi Documentación</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Personalizacion";
+    var mkdocs_page_input_path = "personalizacion.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Mi Documentación</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="tocbase current">
+    
+    
+      
+
+
+  <li class="navtree toctree-l1 inactive">
+    <a class="" href="../introduccion/">Introducción</a>
+  </li>
+    
+      
+
+
+  <li class="navtree toctree-l1 inactive">
+    <a class="" href="../guia_usuario.md">Guía de Usuario</a>
+  </li>
+    
+      
+
+
+  <li class="navtree toctree-l1 inactive">
+    <a class="" href="../referencia.md">Referencia</a>
+  </li>
+    
+  </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Mi Documentación</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Personalizacion</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h3 id="3-personalizacion-del-prompt">3. Personalización del Prompt</h3>
+<p>Personalizar el prompt en Linux te permite adaptar la línea de comandos a tus necesidades y preferencias. A continuación, exploramos cómo puedes modificar y personalizar el prompt, además de los componentes básicos que puedes ajustar:</p>
+<h4 id="1-formato-del-prompt">1. <strong>Formato del Prompt</strong></h4>
+<p>El formato del prompt en Bash se define mediante la variable de entorno <code>PS1</code>. Puedes personalizarlo cambiando el valor de esta variable en tu archivo de configuración, como <code>~/.bashrc</code> o <code>~/.bash_profile</code>.</p>
+<ul>
+<li><strong>Ejemplo de comando para personalizar el prompt:</strong>
+  ```bash
+  export PS1="\u@\h:\w\$ "</li>
+</ul>
+<p>\u representa el nombre del usuario.<br />
+\h muestra el nombre del host.<br />
+\w muestra el directorio de trabajo actual.<br />
+\$ muestra el símbolo del prompt ($ para   usuarios normales y # para el usuario root).</p>
+<h3 id="personalizacion-del-prompt-colores-y-estilos">Personalización del Prompt: Colores y Estilos</h3>
+<p>Añadir colores y estilos al prompt en Linux puede hacer que sea más fácil de leer y más estéticamente agradable. A continuación, te mostramos cómo puedes aplicar colores y estilos a tu prompt utilizando secuencias de escape ANSI.</p>
+<h4 id="1-colores-basicos">1. <strong>Colores Básicos</strong></h4>
+<p>Puedes usar secuencias de escape ANSI para cambiar el color del texto en tu prompt. Aquí te mostramos algunos colores básicos y cómo aplicarlos:</p>
+<ul>
+<li><strong>Colores de Texto:</strong></li>
+<li><strong>Negro:</strong> <code>\[\e[30m\]</code></li>
+<li><strong>Rojo:</strong> <code>\[\e[31m\]</code></li>
+<li><strong>Verde:</strong> <code>\[\e[32m\]</code></li>
+<li><strong>Amarillo:</strong> <code>\[\e[33m\]</code></li>
+<li><strong>Azul:</strong> <code>\[\e[34m\]</code></li>
+<li><strong>Magenta:</strong> <code>\[\e[35m\]</code></li>
+<li><strong>Cian:</strong> <code>\[\e[36m\]</code></li>
+<li>
+<p><strong>Blanco:</strong> <code>\[\e[37m\]</code></p>
+</li>
+<li>
+<p><strong>Ejemplo de uso:</strong>
+  ```bash
+  export PS1="[\e[32m]\u@\h:\w[\e[0m] \$ "</p>
+<p>```</p>
+</li>
+<li>
+<p>[\e[32m] establece el color verde para el texto.</p>
+</li>
+<li>[\e[0m] restablece el color al valor predeterminado después del texto.</li>
+</ul>
+<h3 id="estilos-de-texto-en-el-prompt">Estilos de Texto en el Prompt</h3>
+<p>Los estilos de texto en el prompt de Linux te permiten modificar la apariencia del texto en la terminal. Puedes aplicar estilos como negrita, subrayado y parpadeo utilizando secuencias de escape ANSI. A continuación, se presentan los estilos de texto más comunes y cómo aplicarlos:</p>
+<h4 id="1-negrita">1. <strong>Negrita</strong></h4>
+<p>La negrita hace que el texto aparezca más grueso y destacado.</p>
+<ul>
+<li><strong>Código ANSI para Negrita:</strong> <code>\[\e[1m\]</code></li>
+<li><strong>Ejemplo de uso:</strong>
+  ```bash
+  export PS1="[\e[1m]\u@\h:\w[\e[0m] \$ "</li>
+</ul>
+<h3 id="estilo-de-texto-subrayado">Estilo de Texto: Subrayado</h3>
+<p>El <strong>subrayado</strong> agrega una línea debajo del texto en el prompt, lo que puede ser útil para resaltar información importante o hacer que el texto sea más visible.</p>
+<h4 id="codigo-ansi-para-subrayado"><strong>Código ANSI para Subrayado</strong></h4>
+<ul>
+<li><strong>Código:</strong> <code>\[\e[4m\]</code></li>
+</ul>
+<h4 id="ejemplo-de-uso-en-el-prompt"><strong>Ejemplo de Uso en el Prompt</strong></h4>
+<p>Para aplicar el estilo de subrayado a tu prompt, puedes modificar la variable de entorno <code>PS1</code> en tu archivo de configuración del shell. Aquí tienes un ejemplo de cómo hacerlo en <strong>Bash</strong>:</p>
+<ul>
+<li><strong>Comando para establecer el prompt con subrayado:</strong>
+  ```bash
+  export PS1="[\e[4m]\u@\h:\w[\e[0m] \$ "</li>
+</ul>
+<h3 id="estilo-de-texto-parpadeo">Estilo de Texto: Parpadeo</h3>
+<p>El <strong>parpadeo</strong> hace que el texto en el prompt parpadee. Sin embargo, ten en cuenta que no todos los terminales soportan este efecto y, en algunos casos, puede no ser visible o ser molesto para la vista.</p>
+<h4 id="codigo-ansi-para-parpadeo"><strong>Código ANSI para Parpadeo</strong></h4>
+<ul>
+<li><strong>Código:</strong> <code>\[\e[5m\]</code></li>
+</ul>
+<h4 id="ejemplo-de-uso-en-el-prompt_1"><strong>Ejemplo de Uso en el Prompt</strong></h4>
+<p>Para aplicar el estilo de parpadeo a tu prompt, puedes modificar la variable de entorno <code>PS1</code> en tu archivo de configuración del shell. Aquí tienes un ejemplo de cómo hacerlo en <strong>Bash</strong>:</p>
+<ul>
+<li><strong>Comando para establecer el prompt con parpadeo:</strong>
+  ```bash
+  export PS1="[\e[5m]\u@\h:\w[\e[0m] \$ "</li>
+</ul>
+<h3 id="estilo-de-texto-normal">Estilo de Texto: Normal</h3>
+<p>El <strong>texto normal</strong> restablece el estilo y color del texto al valor predeterminado. Se utiliza para cancelar cualquier estilo o color aplicado anteriormente en el prompt.</p>
+<h4 id="codigo-ansi-para-texto-normal"><strong>Código ANSI para Texto Normal</strong></h4>
+<ul>
+<li><strong>Código:</strong> <code>\[\e[0m\]</code></li>
+</ul>
+<h4 id="ejemplo-de-uso-en-el-prompt_2"><strong>Ejemplo de Uso en el Prompt</strong></h4>
+<p>Cuando personalizas tu prompt con colores o estilos y deseas volver al texto normal después de aplicar un estilo, debes usar el código ANSI <code>\[\e[0m\]</code>. Esto asegura que el texto posterior no mantenga los estilos aplicados anteriormente.</p>
+<ul>
+<li><strong>Comando para establecer el prompt con texto normal después de aplicar otros estilos:</strong>
+  ```bash
+  export PS1="[\e[1;34m]\u@\h:\w[\e[0m] \$ "</li>
+</ul>
+<h3 id="personalizacion-del-prompt-en-zsh">Personalización del Prompt en Zsh</h3>
+<p>Zsh ofrece una gran flexibilidad para personalizar el prompt. A continuación, se presentan ejemplos de cómo aplicar diferentes estilos y colores al prompt en Zsh.</p>
+<h4 id="1-formato-basico-del-prompt">1. <strong>Formato Básico del Prompt</strong></h4>
+<p>Puedes definir el formato básico del prompt en Zsh utilizando la variable <code>PROMPT</code>.</p>
+<ul>
+<li><strong>Ejemplo de Prompt Básico:</strong>
+  ```zsh
+  export PROMPT="%n@%m:%~%# "</li>
+</ul>
+<h3 id="variables-del-prompt-en-zsh">Variables del Prompt en Zsh</h3>
+<p>En <strong>Zsh</strong>, la variable utilizada para personalizar el prompt es <code>PROMPT</code>. Aquí están algunas de las variables más comunes que puedes usar para configurar tu prompt en <strong>Zsh</strong>:</p>
+<h4 id="variables-de-usuario-y-host"><strong>Variables de Usuario y Host</strong></h4>
+<ul>
+<li><strong><code>%n</code></strong>: Nombre del usuario.</li>
+<li><strong>Ejemplo:</strong> <code>%n</code> muestra <code>walter</code> si el usuario es <code>walter</code>.</li>
+<li><strong><code>%m</code></strong>: Nombre del host hasta el primer punto.</li>
+<li><strong>Ejemplo:</strong> <code>%m</code> muestra <code>hostname</code> si el nombre completo del host es <code>hostname.local</code>.</li>
+<li><strong><code>%M</code></strong>: Nombre completo del host.</li>
+<li><strong>Ejemplo:</strong> <code>%M</code> muestra <code>hostname.local</code>.</li>
+</ul>
+<h4 id="variables-del-directorio"><strong>Variables del Directorio</strong></h4>
+<ul>
+<li><strong><code>%~</code></strong>: Directorio de trabajo actual, con la ruta relativa desde el directorio home. Muestra <code>~</code> si estás en el directorio home.</li>
+<li><strong>Ejemplo:</strong> <code>%~</code> muestra <code>~/projects</code> si el directorio actual es <code>/home/walter/projects</code>.</li>
+<li><strong><code>%d</code></strong>: Directorio de trabajo actual, con la ruta completa.</li>
+<li><strong>Ejemplo:</strong> <code>%d</code> muestra <code>/home/walter/projects</code>.</li>
+</ul>
+<h4 id="variables-de-tiempo-y-fecha"><strong>Variables de Tiempo y Fecha</strong></h4>
+<ul>
+<li><strong><code>%t</code></strong>: Hora en formato <code>HH:MM:SS</code>.</li>
+<li><strong>Ejemplo:</strong> <code>%t</code> muestra <code>14:30:00</code>.</li>
+<li><strong><code>%D</code></strong>: Fecha en formato <code>día de la semana</code> y <code>mes día</code>.</li>
+<li><strong>Ejemplo:</strong> <code>%D</code> muestra <code>Tue Sep 18</code>.</li>
+</ul>
+<h4 id="variables-del-prompt"><strong>Variables del Prompt</strong></h4>
+<ul>
+<li><strong><code>%#</code></strong>: Símbolo del prompt (<code>%</code> para usuarios normales y <code>#</code> para el usuario root).</li>
+<li><strong>Ejemplo:</strong> <code>%#</code> muestra <code>$</code> para un usuario normal y <code>#</code> para el usuario root.</li>
+<li><strong><code>%d</code></strong>: Fecha en formato <code>día de la semana</code> y <code>mes día</code>.</li>
+<li><strong>Ejemplo:</strong> <code>%d</code> muestra <code>Tue Sep 18</code>.</li>
+</ul>
+<h4 id="ejemplos-de-personalizacion-del-prompt-en-zsh"><strong>Ejemplos de Personalización del Prompt en Zsh</strong></h4>
+<ul>
+<li><strong>Ejemplo de Prompt Básico:</strong>
+  ```zsh
+  export PROMPT="%n@%m:%~%# "</li>
+</ul>
+<h3 id="colores-en-el-prompt-de-zsh">Colores en el Prompt de Zsh</h3>
+<p>En <strong>Zsh</strong>, puedes utilizar códigos de color ANSI para personalizar el color del texto en el prompt. Los códigos de color permiten cambiar el color del texto y del fondo para mejorar la visibilidad y la estética de tu prompt.</p>
+<h4 id="colores-de-texto"><strong>Colores de Texto</strong></h4>
+<p>Puedes usar los siguientes códigos de color para cambiar el color del texto:</p>
+<ul>
+<li><strong><code>%F{color}</code></strong>: Cambia el color del texto.</li>
+<li><strong><code>black</code></strong>: Negro</li>
+<li><strong><code>red</code></strong>: Rojo</li>
+<li><strong><code>green</code></strong>: Verde</li>
+<li><strong><code>yellow</code></strong>: Amarillo</li>
+<li><strong><code>blue</code></strong>: Azul</li>
+<li><strong><code>magenta</code></strong>: Magenta</li>
+<li><strong><code>cyan</code></strong>: Cian</li>
+<li>
+<p><strong><code>white</code></strong>: Blanco</p>
+</li>
+<li>
+<p><strong>Ejemplo de Prompt con Texto en Color:</strong>
+  ```zsh
+  export PROMPT="%F{blue}%n@%m%f:%F{green}%~%f%# "</p>
+</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
