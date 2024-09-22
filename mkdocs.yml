@@ -3,9 +3,6 @@ theme:
   name: dracula
 
 nav:
-  - docs/index.md
-  
-  
-plugins:
+  - index.md
 
 

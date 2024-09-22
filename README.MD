@@ -7,3 +7,7 @@ Para ver una copia de esta licencia puede visitar el sitio de [Creative Commons]
 
 ![CC BY*NC*SA 4.0](/docs/CC_BY-NC-SA_icon_88x31.png)
 
+La documentación compilada la puedes leer en este [enlace](https://wcervini.github.io/linux)
+
+
+
