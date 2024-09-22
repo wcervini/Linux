@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <title>El Prompt de Linux. - Mi Documentación</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        
+        
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="../assets/css/darcula-highlight.min.css">
+
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/css/dracula-ui.min.css">
+        <link rel="stylesheet" href="../assets/css/mkdocs.min.css">
+
+        
+            <link  rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+                <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
+
+    <main class="d-flex">
+
+        <!-- block sidebar -->
+            <nav id="sidebar" class="sidebar drac-bg-black">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+    </div>
+
+    <div class="p-4">
+        
+
+        <div class="drac-text-center">
+            
+                <span class="drac-text drac-line-height drac-text-white">Mi Documentación</span>
+            
+        </div>
+
+        <div class="drac-box flex-column">
+            <ul class="dot-ul">
+                <li><div class="dot-li drac-bg-cyan"></div></li>
+                <li><div class="dot-li drac-bg-green"></div></li>
+                <li><div class="dot-li drac-bg-orange"></div></li>
+                <li><div class="dot-li drac-bg-pink"></div></li>
+                <li><div class="dot-li drac-bg-purple"></div></li>
+                <li><div class="dot-li drac-bg-red"></div></li>
+                <li><div class="dot-li drac-bg-yellow"></div></li>
+            </ul>
+        </div>
+
+        <hr class="drac-divider" />
+
+        <!-- block menu -->
+        <ul class="mb-5 drac-list drac-list-none">
+            
+        </ul>
+        <!-- endblock -->
+    </div>
+</nav>
+        <!-- endblock -->
+
+        <nav class="divider drac-bg-purple-cyan"></nav>
+
+        <div class="content">
+            <!-- block header -->
+                <header>
+    <nav class="navbar navbar-expand-xl drac-bg-purple">
+        <div class="container-fluid">
+            
+            <button class="navbar-toggler w-100 text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                <ul class="navbar-nav text-md-center">
+
+                    <!-- block preview -->
+                    <li class="nav-item">
+                            
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block search -->
+                    <li class="nav-item"><div role="search" class="search-box">
+	<form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
+		placeholder="Search docs" title="Type search term here" />
+	</form>
+</div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block source -->
+                    <li class="nav-item">
+                        
+                    </li>
+                    <!--  endblock -->
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+            <!-- endblock -->
+
+            <!-- block content -->
+                <section class="p-md-5 section-content">
+    <article>
+        <p><h1 id="el-prompt-de-linux">El Prompt de Linux.</h1>
+<ul>
+<li><a href="#que-es-el-prompt">¿Qué es el prompt?</a></li>
+<li><a href="#tiposdeshell">Tipos de shell</a></li>
+<li>Anatomía del Prompt<ul>
+<li>Personalización del Prompt</li>
+<li>Comandos útiles para el Prompt:
+         <strong>pwd</strong>: Mostrar el directorio actual.
+        * <strong>cd</strong>: Cambiar de directorio.
+        * <strong>history</strong>: Ver el historial de comandos.
+        * <strong>Alias</strong>: Crear atajos para comandos largos o complejos.</li>
+<li>Usar el autocompletado.</li>
+<li>Atajos con el teclado <ul>
+<li>Ctrl+R </li>
+<li>Ctrl+A, Ctrl+E </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="que-es-el-prompt"><a href="que-es-el-prompt">¿Qué es el prompt?</a>&gt;</h3>
+<p>El <strong>prompt</strong> en Linux es la interfaz principal que el sistema utiliza para interactuar con los usuarios a través de la línea de comandos, también conocida como el <strong>shell</strong>. A diferencia de las interfaces gráficas (GUI), el prompt permite a los usuarios escribir comandos directamente para ejecutar tareas, administrar archivos, configurar el sistema, y mucho más.</p>
+<p>El shell es un programa que interpreta estos comandos. En la mayoría de las distribuciones de Linux, el shell predeterminado es <strong>Bash</strong> (Bourne Again Shell), pero existen otros shells populares como <strong>Zsh</strong>, <strong>Fish</strong>, y <strong>Dash</strong>. Aunque el prompt puede parecer algo simple al principio, es una herramienta poderosa que puede ser personalizada para mejorar la productividad y hacer que trabajar en la terminal sea más eficiente y cómodo.</p>
+<p>El prompt no solo muestra el lugar donde se puede ingresar un comando, sino que también proporciona información valiosa como:
+* <strong>El nombre de usuario</strong> que está ejecutando la sesión.
+* <strong>El nombre del sistema o servidor</strong> donde está conectado.
+* <strong>El directorio actual</strong> en el que se encuentra.</p>
+<p>Un ejemplo típico de un prompt en Bash se ve así:</p>
+<p><code>walter@mi_computadora:~$</code></p>
+<ul>
+<li><code>walter</code> es el nombre del usuario.</li>
+<li><code>mi_computadora</code> es el nombre del sistema.</li>
+<li><code>~</code> representa el directorio personal del usuario.</li>
+<li>El símbolo <code>$</code> indica que es un usuario normal (si fuera el usuario root, el símbolo sería <code>#</code>).</li>
+</ul>
+<p>Este simple símbolo en la pantalla es la puerta de entrada a todas las funcionalidades del sistema Linux.</p>
+<h2 id="tipos-de-shell-en-linux">Tipos de Shell en Linux</h2>
+<p>En Linux, el <strong>shell</strong> es un intérprete de comandos que permite a los usuarios interactuar con el sistema operativo. Existen varios tipos de shells, cada uno con características y funcionalidades únicas. A continuación, te presento los más comunes:</p>
+<h4 id="1-bash-bourne-again-shell">1. <strong>Bash (Bourne Again Shell)</strong></h4>
+<p>El <strong>Bash</strong> es el shell predeterminado en la mayoría de las distribuciones de Linux. Es una mejora del shell original <strong>Bourne Shell</strong> (sh) y es conocido por su facilidad de uso, capacidad de scripting y su extensa documentación.</p>
+<ul>
+<li><strong>Características principales:</strong>  <blockquote>
+<p>Autocompletado de comandos.<br />
+Historial de comandos.<br />
+Soporte para scripting avanzado.</p>
+</blockquote>
+</li>
+<li>Comando para comprobar si Bash está configurado:<br />
+<code>bash  
+  echo $SHELL</code></li>
+</ul>
+<h4 id="2-zsh-z-shell">2. <strong>Zsh (Z Shell)</strong></h4>
+<p><strong>Zsh</strong> es un shell muy configurable y popular entre usuarios avanzados. Ofrece más características que Bash, como autocompletado avanzado, corrección de errores tipográficos y una gran cantidad de plugins para personalización.</p>
+<ul>
+<li>Características principales:</li>
+<li>Autocompletado más inteligente que Bash.</li>
+<li>Prompt personalizable con temas (como <strong>Oh My Zsh</strong>).</li>
+<li>
+<p>Corrección automática de comandos mal escritos.</p>
+</li>
+<li>
+<p>Comando para instalar Zsh:
+  ```bash
+  sudo apt install zsh</p>
+</li>
+<li>
+<p>Puedes cambiar tu shell a ZSH utilizando el siguiente comando:
+    ```bash
+    chsh *s /bin/zsh  # Cambia a Zsh, por ejemplo</p>
+</li>
+</ul>
+<h4 id="3-fish-friendly-interactive-shell">3. <strong>Fish (Friendly Interactive Shell)</strong></h4>
+<p><strong>Fish</strong> es un shell diseñado para ser fácil de usar desde el principio, con un enfoque en ofrecer una experiencia interactiva amigable. A diferencia de otros shells, Fish no sigue todas las convenciones de Bash, lo que lo hace diferente, pero más intuitivo para algunos usuarios.</p>
+<ul>
+<li>Características principales:  </li>
+<li><strong>Sugerencias automáticas de comandos</strong> basadas en el historial.</li>
+<li><strong>Autocompletado avanzado</strong> que sugiere comandos a medida que los escribes.</li>
+<li><strong>Temas visuales</strong> y personalización por defecto sin necesidad de editar archivos de configuración.</li>
+<li><strong>Configuración basada en la web</strong> que permite modificar el shell desde una interfaz gráfica amigable.</li>
+<li>
+<p><strong>Compatible con scripts</strong>, pero con una sintaxis ligeramente diferente a la de Bash.</p>
+</li>
+<li>
+<p>Comando para instalar Fish en distribuciones basadas en Debian/Ubuntu:
+  ```bash
+  sudo apt install fish</p>
+</li>
+<li>
+<p>Puedes cambiar tu shell a <strong>FISH</strong> utilizando el siguiente comando:
+    ```bash
+    chsh *s /bin/fish  # Cambia a fish, por ejemplo</p>
+</li>
+</ul>
+<h4 id="4-dash-debian-almquist-shell">4. <strong>Dash (Debian Almquist Shell)</strong></h4>
+<p><strong>Dash</strong> es un shell ligero y rápido que está diseñado principalmente para ejecutar scripts de shell. Es una versión moderna del antiguo Bourne Shell (<strong>sh</strong>), y se utiliza en muchos sistemas Linux para ejecutar scripts de inicio y tareas del sistema debido a su eficiencia.</p>
+<p><strong>Características principales</strong>:
+  * <strong>Ligero y rápido</strong>, lo que lo hace ideal para ejecutar scripts de manera eficiente.
+  * <strong>Cumplimiento de POSIX</strong>, lo que garantiza compatibilidad con scripts escritos para otros shells compatibles con POSIX.
+  * <strong>No está diseñado</strong> para ser utilizado como shell interactivo para el usuario final.
+  * Utilizado en muchas distribuciones como el <strong>shell por defecto para scripts del sistema</strong>, debido a su menor consumo de recursos en comparación con Bash.</p>
+<ul>
+<li>
+<p>Comando para instalar Dash en distribuciones basadas en Debian/Ubuntu:
+  ```bash
+  sudo apt install dash</p>
+</li>
+<li>
+<p>Puedes cambiar tu shell a <strong>DASH</strong> utilizando el siguiente comando:
+    ```bash
+    chsh *s /bin/dash  # Cambia a Dash, por ejemplo</p>
+</li>
+</ul>
+<h4 id="5-ksh-korn-shell">5. <strong>Ksh (Korn Shell)</strong></h4>
+<p><strong>Ksh</strong> (Korn Shell) es un shell desarrollado por David Korn en los años 80. Combina características del Bourne Shell (<strong>sh</strong>) y del C Shell (<strong>csh</strong>), ofreciendo un entorno poderoso tanto para la línea de comandos interactiva como para scripting.</p>
+<ul>
+<li><strong>Características principales:</strong></li>
+<li><strong>Mezcla de características</strong> de los shells Bourne y C Shell, proporcionando lo mejor de ambos mundos.</li>
+<li><strong>Capacidades avanzadas de scripting</strong>, incluyendo soporte para funciones, variables y arrays.</li>
+<li><strong>Historial de comandos</strong> y <strong>autocompletado</strong> mejorados.</li>
+<li><strong>Compatibilidad</strong> con muchos scripts de Bourne y C Shell, facilitando la transición entre diferentes shells.</li>
+<li>
+<p><strong>Soporte para atributos de variables</strong> y control de trabajos avanzado.</p>
+</li>
+<li>
+<p><strong>Comando para instalar Ksh</strong> en distribuciones basadas en Debian/Ubuntu:
+  ```bash
+  sudo apt install ksh</p>
+</li>
+<li>
+<p>Puedes cambiar tu shell a <strong>KSH</strong> utilizando el siguiente comando:
+    ```bash
+    chsh *s /bin/ksh  # Cambia a Zsh, por ejemplo</p>
+</li>
+<li>
+<p>Notas Importantes</p>
+</li>
+<li>
+<p><strong>Nota:</strong> Para cambiar el shell de un usuario a uno nuevo, generalmente se requiere usar el comando <code>chsh</code>. Sin embargo, para algunos cambios de shell que afectan a otros usuarios o requieren privilegios de administrador, es posible que necesites usar <code>sudo</code>. Por ejemplo:</p>
+</li>
+</ul>
+<p>```bash
+  sudo chsh *s /bin/zsh usuario</p></p>
+    </article>
+</section>
+            <!-- endblock -->
+
+            <!-- block footer -->
+                <footer>
+    <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
+        <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
+            class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
+            Made with Dracula Theme for MkDocs
+        </a>
+    </div>
+</footer>
+            <!-- endblock -->
+        </div>
+
+    </main>
+
+        <script>var base_url = '..';</script>
+        <script src="../assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../assets/js/mkdocs.js"></script>
+			<script src="../search/main.js" defer></script>
+
+</body>
+
+</html>
