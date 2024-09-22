@@ -1,7 +1,0 @@
-site_name: Mi Documentación
-nav:
-  - Introducción: introduccion.md
-  - Guía de Usuario: guia_usuario.md
-  - Referencia: referencia.md
-theme:
-  name: "rtd-dropdown"
